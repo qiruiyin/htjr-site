@@ -2,3 +2,23 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
+body {
+	min-width: $w;
+}
+
+// 统一标签浏览器效果
+ul, li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+
+
+// 辅助class
+// .left {
+// 	float: left;
+// }
+// .right {
+// 	float: right;
+// }

@@ -1,0 +1,40 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+footer {
+	background-color: $colorGray2;
+}
+
+.footer-content {
+	width: $w;
+	margin: 0 auto;
+	padding: 20px 0;
+	display: flex;
+	line-height: 1.75;
+
+	ul, a {
+		flex: 1;
+	}
+
+	.qr-code {
+		flex: initial;
+		width: 300px;
+		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+
+			img, span {
+				display: block;
+			}
+		}
+	}
+}
+
+.copyright {
+	padding-bottom: 10px;
+	border-top: 1px solid #fff;
+	line-height: 4;
+	text-align: center;
+}

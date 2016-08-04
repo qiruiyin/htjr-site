@@ -2,12 +2,125 @@
 <html>
 @@include('./part/head.html')
 <title>首页</title>
+<!-- build:css css/index.css -->
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<!-- endbuild -->
 <body>
 @@include('./part/header.html')
+<!-- 轮播图 -->
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<!-- Carousel items -->
+	<div class="carousel-inner">
+		<div class="active item">
+			<img src="./img/banner.jpg">
+		</div>
+		<div class="item">
+			<img src="./img/banner.jpg">
+		</div>
+		<div class="item">
+			<img src="./img/banner.jpg">
+		</div>
+	</div>
+</div>
+
+<!-- 关于海棠 -->
+<section class="ht-section-about">
+	<header>
+		<h2><p>关于海棠<span>About Us</span></p></h2>		
+	</header>
+	<div class="section-content">
+		<ul class="ht-block-ani">
+			<li class="about-company">
+				<!-- <div class="ht-block-shade"></div> -->
+				<img class="ht-block-arrow" src="./img/arrow-yellow.png">
+				<h3>关于海棠</h3>
+				<p>通江投资集团，自2009年于上海成立伊始，即秉持“侧身践行、恭勤不倦”与“同分享、同见证”的集团经营理念，紧扣中国经济的兴盛脉搏与发展机遇。</p>
+				<a href="####">进入</a>
+			</li>
+			<li class="about-group">
+				<!-- <div class="ht-block-shade"></div> -->
+				<img src="./img/arrow-yellow.png">
+				<h3>集团简介</h3>
+				<p>通江投资集团，自2009年于上海成立伊始，即秉持“侧身践行、恭勤不倦”与“同分享、同见证”的集团经营理念，紧扣中国经济的兴盛脉搏与发展机遇。</p>
+				<a href="####">进入</a>
+			</li>
+			<li class="about-vision">
+				<!-- <div class="ht-block-shade"></div> -->
+				<img src="./img/arrow-yellow.png">
+				<h3>品牌愿景</h3>
+				<p>通江投资集团，自2009年于上海成立伊始，即秉持“侧身践行、恭勤不倦”与“同分享、同见证”的集团经营理念，紧扣中国经济的兴盛脉搏与发展机遇。</p>
+				<a href="####">进入</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<!-- 海棠服务 -->
+<section class="ht-section-service">
+	<header>
+		<h2><p>海棠服务<span>HiTalent Service</span></p></h2>		
+	</header>
+	<div class="section-content">
+		<h3>我们致力于成为您贴身的金融管家</h3>
+		<ul class="ht-block-ani2">
+			<li><p><span>专业金融服务</span><a href="####">进入</a></p></li>
+			<li><p><span>金融增值平台</span><a href="####">进入</a></p></li>
+			<li><p><span>完善风控体系</span><a href="####">进入</a></p></li>
+			<li><p><span>金融服务团队</span><a href="####">进入</a></p></li>
+			<li><p><span>舒适用户体验</span><a href="####">进入</a></p></li>
+		</ul>
+	</div>
+</section>
+
+<!-- 海棠公爵会 -->
+<section class="ht-section-duke">
+	<header>
+		<h2><p>海棠公爵会<span>HiTalent Duke</span></p></h2>		
+	</header>
+	<div class="section-content">
+		<h3>海棠公爵会，尊享贵族礼遇及忠诚的骑士服务<span>Malus Duke, Enjoy The Noble Courtesy and Loyal Knight Service</span></h3>
+		
+		<ul>
+			<li>海棠金融专为客户打造的高端会员俱乐部</li>
+			<li>秉承中世纪为骑士的理念，以忠诚、可靠、专业为信仰，</li>
+			<li>为公爵会的成员提供财富安全、长久传承的服务。</li>
+		</ul>
+
+		<a class="link-duke" href="####">进入海棠公爵会</a>
+	</div>
+</section>
+
+<!-- 合作伙伴 -->
+<section class="ht-section-partner">
+	<header>
+		<h2><p>合作伙伴<span>Cooperrative Partner</span></p></h2>		
+	</header>
+	<div class="section-content">
+		<ul class="parter">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</section>
 
 @@include('./part/footer.html')
 
-@@include('./part/foot.html')
+@@include('./part/js.html')
 <!-- build:js js/index.js -->
 <script src="./js/index.js"></script>
 <!-- endbuild -->
