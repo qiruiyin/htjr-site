@@ -3,12 +3,13 @@
 @import  'core/mixins', 'core/functions', 'core/vars';
 
 body {
-	min-width: $w;
+	min-width: $w + 40;
 }
 
 // 统一标签浏览器效果
 ul, li {
 	list-style: none;
+	padding-left: 0;
 }
 a {
 	color: inherit;

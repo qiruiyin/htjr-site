@@ -2,6 +2,8 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
+$headerH: 90px;
+
 header.ht-header {
 	position: absolute;
 	width: 100%;
@@ -11,6 +13,7 @@ header.ht-header {
 	
 	nav {
 		width: $w;
+		height: $headerH;
 		margin: 0 auto;
 	}
 }
@@ -22,15 +25,18 @@ h1 {
 	z-index: 9;
 }
 .ht-nav {
+	position: relative;
 	margin: 0 auto;
-	margin-left: 200px;
-	line-height: 90px;
+	margin-left: 220px;
+	line-height: $headerH;
 	font-size: 0;
 
 	& > li {
-		display: inline-block;
-		padding: 0 10px;
-		font-size: 28px;
+		float: left;
+		width: 130px;
+		padding: 0;
+		font-size: 24px;
+		text-align: center;
 		
 		&.ht-nav-dropdown {
 			position: relative;
@@ -38,22 +44,15 @@ h1 {
 			&:after {
 				content: "";
 				position: absolute;
-				top: 90px;
+				top: $headerH;
 				left: -2000px;
 				width: 4000px;
-				height: 41px;
+				height: 40px;
 				background-color: $colorBlack;
 				display: none;
 			}
 
 			&:hover {
-				& > .ht-nav-icon {
-					display: block;
-				}
-				& > .ht-nav-icon {
-					display: block;
-				}
-
 				& > .ht-nav-dropdown-menu {
 					display: block;
 				}
@@ -74,20 +73,22 @@ h1 {
 	.ht-nav-icon {
 		position: absolute;
 		top: 70px;
-		left: 50%;
+		left: 65px;
 		width: 10px;
 		height: 10px;
+		padding: 0;
 		margin-left: -5px;
 		background: url("../img/circle.png");
-		display: none;
+		transition: 1s;
 	}
 }
 .ht-nav-dropdown-menu {
 	position: absolute;
-	top: 92px;
+	top: $headerH + 2;
 	left: -20px;
 	width: 1000px;
 	padding-left: 0;
+	text-align: left;
 	font-size: 16px;
 	color: #fff;
 	line-height: 40px;
@@ -95,13 +96,17 @@ h1 {
 	display: none;
 
 	& > li {
+		float: left;
 		width: 100px;
 		text-align: center;
-		display: inline-block;
-
-		&:hover {
-			color: $colorBlackFont;
-			background-color: $colorYellowHeader;
-		}
+	}
+	
+	.ht-nav-dropdown-menu-bg {
+		position: absolute;
+		left: 0;
+		height: 40px;
+		background-color: $colorYellowHeader;
+		z-index: -1;
+		transition: 1s;
 	}
 }

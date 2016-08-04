@@ -17,13 +17,17 @@ footer {
 		flex: 1;
 	}
 
-	.qr-code {
+	.qrcode {
 		flex: initial;
-		width: 300px;
+		width: 270px;
 		padding: 0;
 		text-align: center;
 		li {
 			display: inline-block;
+			
+			&:first-child {
+				margin-right: 30px;
+			}
 
 			img, span {
 				display: block;

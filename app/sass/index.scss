@@ -3,6 +3,17 @@
 @import  'core/mixins', 'core/functions', 'core/vars';
 @import  'index-ani';
 
+.carousel {
+    .carousel-inner {
+        img {
+            height: 650px;        
+        }
+    }
+
+    .carousel-indicators {
+        margin-top: 50px;
+    }
+}
 // 内容模块
 section {
     padding-top: 40px;
@@ -44,6 +55,9 @@ section {
 }
 
 .ht-section-service {
+    background: url("../img/service.jpg")  no-repeat;
+    background-position: center 85px;
+
     h3 {
         color: $colorBlack;
         margin-top: 10px;
@@ -51,7 +65,7 @@ section {
 }
 
 .ht-section-duke {
-    background-color: $colorYellow2;
+    background: $colorYellow2 url("../img/ren.png") left bottom no-repeat;
 
     header {
         border-bottom-color: #fff;
@@ -82,6 +96,7 @@ section {
     }
 
     a.link-duke {
+        position: relative;
         width: 200px;
         margin-top: 50px;
         background-color: $colorBlack;
@@ -89,6 +104,21 @@ section {
         line-height: 3;
         color: #fff;
         display: block;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 8px;
+            width: 14px;
+            height: 23px;
+            background: url("../img/into.png") no-repeat;
+        }
+        &:after {
+            left: auto;
+            right: 12px;
+            transform: rotate(180deg);
+        }
     }
 }
 
