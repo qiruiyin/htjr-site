@@ -128,11 +128,7 @@
 	gulp.task('image', function(){
 		return gulp.src(_.img + '/**/*')
 			.pipe($.cache($.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-			.pipe($.imagemin({
-				pregressive: true,
-				svgoPlugins: [{removeViewBox: false}],
-				use: [$.imageminPngquant()]
-			}))
+			.pipe($.imagemin())
 			.pipe(gulp.dest(_.dist + '/img'))
 			.pipe($.size({
 				title: 'IMAGE files:'
@@ -178,9 +174,10 @@
 			.pipe($.plumber())
 			.pipe($.useref())
 			.pipe($.if('*.js', $.uglify()))
-			.pipe($.if('*.js', $.rev()))
 			.pipe($.if('*.css', $.cssnano()))
-			.pipe($.if('*.css', $.rev()))
+			.pipe($.rev())
+			.pipe(gulp.dest(_.dist))
+			.pipe($.rev.manifest())
 			.pipe(gulp.dest(_.dist));
 	});
 
@@ -215,8 +212,8 @@
 	// 检查css和js
   	gulp.task('test',  ['jshint', 'scss-lint']);
 	// 默认
-	gulp.task('default', ['html', 'sass', 'rimraf', 'webpack'], function(){
-		gulp.start('rimraf-rev');
+	gulp.task('default', ['html', 'sass', 'rimraf'], function(){
+		gulp.start('dist');
 		
 	});
 })(require('gulp'), require('gulp-load-plugins'));
