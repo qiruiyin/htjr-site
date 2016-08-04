@@ -4,7 +4,6 @@ app/css
 app/*.html
 dist
 *.log
-*.png
 *.zip
 node_modules
 bower_components
