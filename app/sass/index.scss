@@ -86,6 +86,8 @@ section {
     }
 
     .section-content {
+        position: relative;
+        z-index: 1;
         text-align: left;
     }
     
@@ -139,6 +141,13 @@ section {
             right: 12px;
             transform: rotate(180deg);
         }
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
     }
 }
 
