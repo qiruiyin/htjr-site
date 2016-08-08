@@ -46,13 +46,14 @@
 // inline-block end
 
 @mixin title-h3() {
+  position: relative;
   width: $w;
   background: #fff;
   margin: 0 auto;
   margin-top: -160px;
   min-height: 500px;
 
-  h3 {
+  & > h3 {
     border-bottom: 1px solid $colorGray;
     text-align: center;
 

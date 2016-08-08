@@ -53,10 +53,11 @@
 		return gulp.src(_.css + '/*.css')
 	      	.pipe($.cssSpriter({
 				// 生成的spriter的位置
-	        	'spriteSheet': _.img + '/spriter.png',
+	        	'spriteSheet': _.img + '/catalog.jpg',
 	        	// 生成样式文件图片引用地址的路径
-	        	'pathToSpriteSheetFromCSS': '../img/spriter.png'
+	        	'pathToSpriteSheetFromCSS': '../img/catalog.jpg'
 			}))
+			.pipe(gulp.dest(_.css));
 	});
 
 	// gulp-sass, gulp-autoprefixer, gulp-sourcemaps
@@ -212,7 +213,7 @@
 	// 检查css和js
   	gulp.task('test',  ['jshint', 'scss-lint']);
 	// 默认
-	gulp.task('default', ['html', 'sass', 'rimraf'], function(){
+	gulp.task('default', ['html', 'rimraf'], function(){
 		gulp.start('dist');
 		
 	});

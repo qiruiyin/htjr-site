@@ -2,32 +2,65 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
-// 详情页css
-
+// 参考about
 $marginTop: 30px;
-$marginLeft: 50px;
+// $marginLeft: 50px;
 
-article.ht-details {
-	@include title-h3();
-	padding-top: $marginTop;
+.ht-article {
+	line-height: 2;
 
-	h3, img, p {
-		&:first-child {
-			margin-top: 0;
+	& > h3 {
+		& > span {
+			padding-right: 10px;
+			border-right: 2px solid $colorGray;
+			line-height: 1;
+			display: inline-block;
 		}
 	}
 
-	h3 {
-		margin: $marginTop $marginLeft;
-	}
-
-	p {
-		margin: $marginTop $marginLeft 0;
-		text-indent: 2em;
+	.ht-article-info {
+		font-size: 12px;
 		line-height: 2;
+		margin-top: 20px;
+		
+		span, label {
+			margin-right: 6px;
+		}
 	}
 
-	img {
+	.ht-article-subtitle {
+		position: relative;
+		width: 200px;
+		margin: 0 auto;
 		margin-top: $marginTop;
+		padding: 50px 0;
+		border: 1px solid $colorGray;
+		border-right: 0;
+		border-left: 0;
+		text-align: center;
+
+		span {
+			position: absolute;
+			left: -($w - 200)/2;
+			width: $w;
+			margin-top: -8px;
+			display: block;
+		}
+	}
+	
+	& > h5 {
+		font-size: 20px;
+		text-align: center;
+		margin-top: $marginTop;
+	}
+
+	& > img {
+		width: 100%;
+		margin-top: $marginTop;
+	}
+
+	& > p {
+		margin-top: $marginTop;
+		text-indent: 2em;
 	}
 }

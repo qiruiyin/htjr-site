@@ -1,0 +1,71 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+// 底部栏目信息
+.ht-catalog {
+	width: $w;
+	margin: 0 auto;
+	background-color: #fff;
+
+	& > p {
+		margin: 30px 0 20px;
+		text-align: center;
+	}
+}
+.ht-catalog-info {
+	position: relative;
+	padding: 60px 100px 30px;
+	background-color: #ededed;
+	line-height: 1.75;
+
+	h3 {
+		position: absolute;
+		top: 15px;
+		font-size: 16px;
+		padding-right: 10px;
+		border-right: 2px solid #8e8e8e;
+	}
+
+	img {
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.ht-catalog-others {
+	padding-bottom: 40px;
+	display: flex;
+
+	& > li {
+		width: 140px;
+		height: 140px;
+		margin-left: 32px;
+		line-height: 140px;
+		text-align: center;
+		color: #fff;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.ht-catalog-top {
+	background: url("../img/catalog/top.jpg?__spriter") no-repeat;
+}
+.ht-catalog-stock {
+	background: url("../img/catalog/stock.jpg?__spriter") no-repeat;
+}
+.ht-catalog-media {
+	background: url("../img/catalog/media.jpg?__spriter") no-repeat;
+}
+.ht-catalog-edu {
+	background: url("../img/catalog/edu.jpg?__spriter") no-repeat;
+}
+.ht-catalog-report {
+	background: url("../img/catalog/report.jpg?__spriter") no-repeat;
+}
+.ht-catalog-rating {
+	background: url("../img/catalog/rating.jpg?__spriter") no-repeat;
+}

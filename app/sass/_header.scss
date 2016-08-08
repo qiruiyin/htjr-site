@@ -43,6 +43,7 @@ h1 {
 	margin-left: 220px;
 	line-height: $headerH;
 	font-size: 0;
+	z-index: 1;
 
 	& > li {
 		float: left;
@@ -93,6 +94,7 @@ h1 {
 		margin-left: -5px;
 		background: url("../img/circle.png");
 		transition: 1s;
+	    z-index: -1;
 	}
 }
 .ht-nav-dropdown-menu {
