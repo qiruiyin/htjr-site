@@ -2,3 +2,8 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 @import  'base';
+
+body {
+	height: 100px;
+	width: px2rem(750);
+}

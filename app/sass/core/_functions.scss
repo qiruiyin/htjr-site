@@ -59,3 +59,7 @@ $pi:    3.141592653589793;
 @function tan($angle) {
   @return sin($angle) / cos($angle);
 }
+
+@function px2rem($px) {
+  @return $px / 75 + rem;
+}
