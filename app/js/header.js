@@ -14,4 +14,7 @@
 		var translateX = 100 * $(this).index();
   		$(this).siblings(".ht-nav-dropdown-menu-bg").css('transform','translateX('+  translateX +'px)');
 	});
+	$('.ht-nav-dropdown-menu').on('mouseleave', function(){
+  		$(this).find(".ht-nav-dropdown-menu-bg").css('transform','translateX(0)');
+	});
 })();

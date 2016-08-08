@@ -1,12 +1,12 @@
 @charset 'utf-8';
-
-$ie6-7: false;
+@import  'core/vars';
 
 // 宽高 start
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
 }
+
 // 宽高 end
 
 // 定位 start
@@ -44,3 +44,24 @@ $ie6-7: false;
   }
 }
 // inline-block end
+
+@mixin title-h3() {
+  width: $w;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: -160px;
+  min-height: 500px;
+
+  h3 {
+    border-bottom: 1px solid $colorGray;
+    text-align: center;
+
+    span {
+      line-height: 60px;
+      padding: 0 20px 14px;
+      font-size: 30px;
+      color: $colorYellow;
+      border-bottom: 2px solid $colorBlack;
+    }
+  }
+}

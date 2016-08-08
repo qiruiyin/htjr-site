@@ -3,25 +3,38 @@
 @import  'core/mixins', 'core/functions', 'core/vars';
 
 $headerH: 90px;
+$headerBorder: 2px;
+$menuH: 40px;
 
 header.ht-header {
-	position: absolute;
+	position: relative;
 	width: 100%;
-	border-bottom: 2px solid $colorBlack;
+	min-width: $w + 40;
+	border-bottom: $headerBorder solid $colorBlack;
 	color: $colorBlackFont;
-	z-index: 1;
+	background-color: #fff;
 	
 	nav {
 		width: $w;
 		height: $headerH;
 		margin: 0 auto;
 	}
+
+	&.ht-header-index {
+		position: absolute;
+		z-index: 1;
+		background: none;
+
+		h1 {
+			padding: 16px 35px 12px;
+			background-color: $colorBlack;
+		}
+	}
 }
 h1 {
 	position: absolute;
-	padding: 16px 35px 12px;
+	padding: 30px 0 16px;
 	margin: 0 auto;
-	background-color: $colorBlack;
 	z-index: 9;
 }
 .ht-nav {
@@ -47,7 +60,7 @@ h1 {
 				top: $headerH;
 				left: -2000px;
 				width: 4000px;
-				height: 40px;
+				height: $menuH;
 				background-color: $colorBlack;
 				display: none;
 			}
@@ -91,7 +104,7 @@ h1 {
 	text-align: left;
 	font-size: 16px;
 	color: #fff;
-	line-height: 40px;
+	line-height: $menuH;
 	z-index: 2;
 	display: none;
 
@@ -104,7 +117,7 @@ h1 {
 	.ht-nav-dropdown-menu-bg {
 		position: absolute;
 		left: 0;
-		height: 40px;
+		height: $menuH - $headerBorder;
 		background-color: $colorYellowHeader;
 		z-index: -1;
 		transition: 1s;

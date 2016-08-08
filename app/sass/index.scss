@@ -3,6 +3,10 @@
 @import  'core/mixins', 'core/functions', 'core/vars';
 @import  'index-ani';
 
+body {
+	background: none;
+}
+
 .carousel {
     .carousel-inner {
         img {

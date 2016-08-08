@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+// 详情页css
+
+$marginTop: 30px;
+$marginLeft: 50px;
+
+article.ht-details {
+	@include title-h3();
+	padding-top: $marginTop;
+
+	h3, img, p {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	h3 {
+		margin: $marginTop $marginLeft;
+	}
+
+	p {
+		margin: $marginTop $marginLeft 0;
+		text-indent: 2em;
+		line-height: 2;
+	}
+
+	img {
+		margin-top: $marginTop;
+	}
+}
