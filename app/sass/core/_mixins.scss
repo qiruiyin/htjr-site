@@ -44,24 +44,3 @@
   }
 }
 // inline-block end
-
-@mixin title-h3() {
-  width: $w;
-  background: #fff;
-  margin: 0 auto;
-  margin-top: -160px;
-  min-height: 500px;
-
-  h3 {
-    border-bottom: 1px solid $colorGray;
-    text-align: center;
-
-    span {
-      line-height: 60px;
-      padding: 0 20px 14px;
-      font-size: 30px;
-      color: $colorYellow;
-      border-bottom: 2px solid $colorBlack;
-    }
-  }
-}
