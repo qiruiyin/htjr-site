@@ -1,6 +1,14 @@
 @charset 'utf-8';
 @import  'core/vars';
 
+// [data-dpr="1"]
+@mixin fontSize($size){
+    @if $size == 50 { font-size: 30px; }
+    @if $size == 40 { font-size: 26px; }
+    @if $size == 30 { font-size: 16px; }
+    @if $size == 24 { font-size: 14px; }
+    @if $size == 16 { font-size: 12px; }
+}
 // 宽高 start
 @mixin size($width, $height: $width) {
   width: $width;

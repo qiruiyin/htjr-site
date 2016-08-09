@@ -2,3 +2,12 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 750px;
+	margin: 0 auto;
+	font-family: sans-serif;
+}

@@ -63,3 +63,8 @@ $pi:    3.141592653589793;
 @function px2rem($px) {
   @return $px / 75 + rem;
 }
+
+
+@function fontSize($px) {
+  @return $px / 24 + em;
+}

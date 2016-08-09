@@ -1,3 +1,201 @@
 @charset 'utf-8';
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
+
+$linkBg: #3e3e3e;
+$linkStarW: 200;
+// 轮播图
+.ht-swiper {
+	width: 100%;
+
+	.swiper-pagination {
+		position: static;
+		padding: px2rem(30);
+	}
+}
+
+// 链接
+.ht-link {
+	& > a {
+		width: 100%;
+		height: px2rem(118);
+		line-height: px2rem(118);
+		background-color: $linkBg;
+		color: #d4bf82;
+		font-size: 40px;
+		text-align: center;
+		border-top: 1px solid #000;
+		display: block;
+
+		&.active {
+			color: $linkBg;
+			background: linear-gradient(to right, #a4864a, #eedea2);
+		}
+
+		&:first-child {
+			border-top: 0;
+		}
+	}
+}
+
+.ht-block {
+	overflow: hidden;
+	font-size: 30px;
+
+	h2 {
+		line-height: 1.5;
+		text-align: left;
+		font-size: 50px;
+
+		span {
+			display: block;
+		}
+	}
+
+	i {
+		font-style: italic;
+	}
+
+	.ht-block-btn {
+		width: px2rem(310);
+		margin: 0 auto;
+		margin-top: px2rem(320);
+		background: linear-gradient(#ecdc9f, #af9357);
+		line-height: px2rem(95);
+		text-align: center;
+		color: inherit;
+		display: block;
+	}
+
+}
+
+.ht-block-steward {
+	height: px2rem(1160);
+	padding: px2rem(100) 0;
+	background: url("../img/steward.jpg") no-repeat;
+	background-size: 100%;
+
+	h2 {
+		text-align: center;
+	}
+}
+.ht-link-star {
+	position: relative;
+	padding: 0 px2rem(39);
+	text-align: center;
+	margin: 0 auto;
+	margin-top: px2rem(360);
+	transform: rotate(45deg);
+	@extend %clearfix;
+
+	li {
+		float: left;
+		width: px2rem($linkStarW);
+		height: px2rem($linkStarW);
+		margin: 0 px2rem(12);
+		line-height: px2rem($linkStarW);
+		color: #fff;
+		font-size: 26px;
+		background-color: #4a4845;
+		display: block;
+		
+		&:first-child, &:last-child {
+			position: absolute;
+			top: - px2rem($linkStarW + 25);
+			left: 50%;
+			margin-left: - px2rem($linkStarW/2);
+		}
+		&:last-child {
+			top: px2rem($linkStarW + 25);
+		}
+
+		span {
+			height: 100%;
+			transform: rotate(-45deg);
+			display: block;
+		}
+	}
+}
+
+.ht-block-mpaper {
+	height: px2rem(990);
+	padding: px2rem(200) px2rem($padding) px2rem(120);
+	background: url("../img/mpaper.jpg") no-repeat;
+	background-size: 100%;
+
+	h2 {
+		span {
+			font-size: 24px;
+		}
+	}
+
+	p {
+		width: 13em;
+		margin-top: px2rem(60);
+	}
+}
+
+.ht-block-duke {
+	height: px2rem(1160);
+	padding: px2rem(110) px2rem($padding) px2rem(270);
+	background: #eddda1 url("../img/duke.png") no-repeat;
+	background-position: bottom;
+    background-size: 100%;
+
+	h2 {
+		line-height: 1;
+	}
+
+	i {
+		margin-top: px2rem(40);
+		display: block;
+	}
+
+	p {
+		margin-top: px2rem(130);
+	}
+
+	.ht-block-btn-duke {
+		position: relative;
+		margin-top: px2rem(130);
+		background: #000;
+		color: #fff;
+
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			top: px2rem(36);
+			left: px2rem(15);
+			width: px2rem(14);
+			height: px2rem(23);
+			background: url("../img/into.png") no-repeat;
+			background-size: 100%;
+		}
+
+		&:after {
+			left: auto;
+			right: px2rem(15);
+			transform: rotate(180deg);
+		}
+	}
+}
+
+[data-dpr="1"] {
+	.ht-link > a {
+		@include fontSize(40);
+	}
+
+	.ht-block {
+		@include fontSize(30);
+		h2 {
+			@include fontSize(50);
+		}
+	}
+	.ht-link-star li {
+		@include fontSize(30);
+	}
+
+	.ht-block-mpaper h2 span {
+		@include fontSize(24);
+	}
+}

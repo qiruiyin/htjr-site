@@ -1,9 +1,9 @@
 @charset 'utf-8';
-@import  'sandal/core';
+@import  'sandal/core',"sandal/core/reset";;
 @import  'core/mixins', 'core/functions', 'core/vars';
-@import  'base';
+@import  'base', 'header', 'footer';
 
-body {
-	height: 100px;
-	width: px2rem(750);
-}
+// body {
+// 	height: 100px;
+// 	// width:;
+// }
