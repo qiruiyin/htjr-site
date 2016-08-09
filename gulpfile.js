@@ -49,7 +49,7 @@
 	// 制作雪碧图
 	// 单独制作雪碧图
 	gulp.task('sprite', function(){
-		// console.log(gulp.src(_.css + '/*.css'));
+		console.log(1);
 		return gulp.src(_.css + '/*.css')
 	      	.pipe($.cssSpriter({
 				// 生成的spriter的位置
