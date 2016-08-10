@@ -1,7 +1,21 @@
 // 安全区
 $w: 1000px;
 
+// font-size
+$font32: 32px;
+$font30: 30px;
+$font26: 26px;
+$font22: 22px;
+$font20: 20px;
+$font18: 18px;
+$font16: 16px; 
+$font14: 14px;
+$font13: 13px;
+$font12: 12px;
+
 // color
+$colorBg: #ececec; //除首页外背景色
+
 $colorBlack: #000; // 黑色
 $colorBlackFont: #020202; // 字体颜色黑色
 $colorBlack2: #4b4946; // 海棠服务背景黑色
@@ -12,6 +26,11 @@ $colorYellow2: #af936c; //公爵会背景黄色
 $colorGray: #acacac;  //灰色
 $colorGrayBg: #ececec; //body背景色
 $colorGray2: #d9d9d9; // 底部灰色
-$colorBrown: #947d5d; //棕色
+$colorGray3: #777; // 文章信息颜色
+$colorGray4: #aaa; // 标题栏目颜色
+$colorGray5: #9a9a9a; // 动态：标题作者信息颜色（和3一样）
+$colorGray6: #a2a2a2; // 动态：特殊展现颜色
 
+$colorBrown: #947d5d; //棕色
+$colorBlue: #2079c4; // 蓝色
 

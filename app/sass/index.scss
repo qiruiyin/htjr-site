@@ -28,17 +28,18 @@ body {
 }
 // 内容模块
 section {
-    padding-top: 40px;
+    padding-top: 60px;
     header {
         border-bottom: 1px solid $colorGray;
     }
     h2 {
         position: relative;
         width: $w;
+        font-size: $font26;
         margin: 0 auto;
 
         p {
-            width: 180px;
+            width: 160px;
             margin-bottom: -1px;
             line-height: 1.5;
             border-bottom: 1px solid $colorBlack;
@@ -68,11 +69,12 @@ section {
 
 .ht-section-service {
     background: url("../img/service.jpg")  no-repeat;
-    background-position: center 85px;
+    background-position: center 100px;
 
     h3 {
         color: $colorBlack;
         margin-top: 10px;
+        font-size: $font30;
     }
 }
 
@@ -98,10 +100,11 @@ section {
     h3 {
         margin-top: 10px;
         color: $colorBlack;
+        font-size: $font30;
 
         span {
             line-height: 1.5;
-            font-size: 16px;
+            font-size: $font18;
             display: block;
             font-style:italic;
         }
@@ -109,16 +112,18 @@ section {
     
     ul {
         padding: 0;
+        margin-top: 30px;
     }
     li {
-        line-height: 2;
+        line-height: 3;
         color: #fff;
+        font-size: $font16;
     }
 
     a.link-duke {
         position: relative;
         width: 200px;
-        margin-top: 50px;
+        margin-top: 80px;
         background-color: #fff;
         text-align: center;
         line-height: 3;
@@ -151,7 +156,7 @@ section {
         position: absolute;
         right: 0;
         bottom: 0;
-        z-index: 0;
+        z-index: -1;
     }
 }
 

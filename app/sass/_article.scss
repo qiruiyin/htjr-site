@@ -6,45 +6,19 @@
 $marginTop: 30px;
 // $marginLeft: 50px;
 
+// 文章
 .ht-article {
 	line-height: 2;
 
 	& > h3 {
+		font-size: $font32;
+
 		& > span {
 			padding-right: 10px;
-			border-right: 2px solid $colorGray;
+			border-right: 2px solid $colorGray4;
 			line-height: 1;
+			color: $colorGray4;
 			display: inline-block;
-		}
-	}
-
-	.ht-article-info {
-		font-size: 12px;
-		line-height: 2;
-		margin-top: 20px;
-		
-		span, label {
-			margin-right: 6px;
-		}
-	}
-
-	.ht-article-subtitle {
-		position: relative;
-		width: 200px;
-		margin: 0 auto;
-		margin-top: $marginTop;
-		padding: 50px 0;
-		border: 1px solid $colorGray;
-		border-right: 0;
-		border-left: 0;
-		text-align: center;
-
-		span {
-			position: absolute;
-			left: -($w - 200)/2;
-			width: $w;
-			margin-top: -8px;
-			display: block;
 		}
 	}
 	
@@ -61,6 +35,94 @@ $marginTop: 30px;
 
 	& > p {
 		margin-top: $marginTop;
+		font-size: $font14;
 		text-indent: 2em;
+	}
+}
+
+.ht-article-info {
+	font-size: $font12;
+	line-height: 2;
+	margin-top: 20px;
+	color: $colorGray5;
+	
+	span, label {
+		margin-right: 6px;
+		font-weight: normal;
+	}
+}
+
+.ht-article-subtitle {
+	position: relative;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: $marginTop;
+	padding: 50px 0;
+	border: 1px solid $colorGray6;
+	border-right: 0;
+	border-left: 0;
+	font-size: $font18;
+	color: $colorGray6;
+	text-align: center;
+
+	span {
+		position: absolute;
+		left: -($w - 200)/2;
+		width: $w;
+		margin-top: - $font18;
+		display: block;
+	}
+}
+
+// 上一篇下一篇链接
+.ht-article-link {
+	position: absolute;
+	left: -182px;
+	top: 220px;
+
+	& > div {
+		width: 182px;
+		height: 200px;
+		margin-top: 20px;
+		border: 1px solid #d3d3d3;
+	}
+
+	.ht-article-btn {
+		position: absolute;
+		left: 50%;
+		width: 46px;
+		height: 46px;
+		margin-left: -23px;
+		margin-top: -23px;
+		line-height: 44px;
+		border: 2px solid #fff;
+		background-color: #ff8e0f;
+		color: #fff;
+		font-size: $font12;
+		text-align: center;
+		border-radius: 100%;
+	}
+
+	a {
+		cursor: pointer;
+	}
+
+	p {
+		margin: 0 15px;
+		margin-top: 36px;
+		line-height: 1.75;
+		font-size: $font12;
+	}
+}
+
+// 分享
+.ht-article-share {
+	position: absolute;
+	top: 220px;
+	right: -80px;
+
+	a {
+		margin-top: 20px;
+		display: block;
 	}
 }
