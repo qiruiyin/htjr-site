@@ -13,6 +13,6 @@
 	});
 
 	$(".ht-back-top").on("click", function(){
-		$('body,html').animate({scrollTop:0},1500);
+		$('body,html').animate({scrollTop:0}, 500);
 	});
 })();
