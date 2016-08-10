@@ -2,7 +2,6 @@
 .sass-cache
 app/css
 app/*.html
-dist
 *.log
 *.zip
 node_modules
