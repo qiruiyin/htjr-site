@@ -2,8 +2,20 @@
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
 
+$footerBorderColor: #b7b7b7;
+
 footer {
-	background-color: $colorGray2;
+	border-top: 1px solid $footerBorderColor;
+	background-color: #fff;
+
+	&.ht-footer-index {
+		border-top: 0;
+		background-color: $colorGray2;
+
+		.copyright {
+			border-top: 2px solid #fff;
+		}
+	}
 }
 
 .footer-content {
@@ -47,7 +59,7 @@ footer {
 
 .copyright {
 	padding-bottom: 10px;
-	border-top: 2px solid #fff;
+	border-top: 1px solid $footerBorderColor;
 	line-height: 4;
 	font-size: $font14;
 	text-align: center;
