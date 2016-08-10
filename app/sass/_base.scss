@@ -3,6 +3,7 @@
 @import  'core/mixins', 'core/functions', 'core/vars';
 
 body {
+	font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
 	min-width: $w + 40;
 	margin: 0 auto;
 	background-color: $colorGrayBg;
