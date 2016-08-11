@@ -170,15 +170,15 @@
 
 	// js、css、html压缩处理（可选）
 	// 打包到dist文件夹下
-	gulp.task('dist', ['image', 'rename'], function(){
+	gulp.task('dist', ['image'], function(){
 		return gulp.src('app/*.html')
 			.pipe($.plumber())
 			.pipe($.useref())
-			.pipe($.if('*.js', $.uglify()))
-			.pipe($.if('*.css', $.cssnano()))
-			.pipe($.rev())
-			.pipe(gulp.dest(_.dist))
-			.pipe($.rev.manifest())
+			// .pipe($.if('*.js', $.uglify()))
+			// .pipe($.if('*.css', $.cssnano()))
+			// .pipe($.rev())
+			// .pipe(gulp.dest(_.dist))
+			// .pipe($.rev.manifest())
 			.pipe(gulp.dest(_.dist));
 	});
 

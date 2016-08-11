@@ -1,8 +1,9 @@
 @charset 'utf-8';
 @import  'sandal/core';
 @import  'core/mixins', 'core/functions', 'core/vars';
-@import  'base', 'header', 'footer', 'article', 'list', 'catalog';
+@import  'base', 'header', 'footer', 'article', 'list', 'catalog', 'content', 'tab', 'info-list';
 
+// 头部banner
 .ht-top-banner {
 	width: 100%;
 	height: 559px;
@@ -20,19 +21,12 @@
 		background-image: url("../img/top-banner/dynamic-details.jpg");
 	}
 
-	&.ht-banner-recruit {
-		background-image: url("../img/top-banner/recruit.jpg");
+	&.ht-banner-job {
+		background-image: url("../img/top-banner/job.jpg");
 	}
 }
 
-.ht-content {
-	@include title-h3();
-
-	&.ht-content-padding {
-		padding: 30px 90px;
-	}
-}
-
+// 回到顶部
 .ht-back-top {
 	position: fixed;
 	bottom: 100px;

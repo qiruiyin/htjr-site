@@ -1,0 +1,46 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.ht-content > .ht-linkus-info {
+	margin: 0 auto;
+}
+
+.ht-linkus-info {
+	@extend %clearfix;
+	background-color: #ae936c;
+	color: #fff;
+}
+
+.ht-linkus-info-left {
+	float: left;
+	width: 660px;
+	height: 400px;
+	padding: 0 50px;
+	background-color: #273443;
+	font-size: $font24;
+
+	h5 {
+		margin-top: 100px;
+		font-size: $font30;
+	}
+
+	address {
+		margin-bottom: 40px;
+	}
+
+	p {
+		margin-bottom: 0;
+		line-height: 1.25;
+	}
+}
+
+.ht-linkus-info-right {
+	padding-top: 140px; 
+	text-align: center;
+	font-size: $font30;
+
+	p {
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,71 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+// 详情页css
+
+// 内容区
+$contentPaddingT: 30px;
+$contentPaddingL: 50px;
+
+// 内容容器
+.ht-content {
+	position: relative;
+	width: $w;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: -182px;
+	min-height: 500px;
+
+	& > h3 {
+		border-bottom: 1px solid $colorGray;
+		text-align: center;
+
+		span {
+			position: relative;
+			line-height: 60px;
+			padding: 0 20px 14px;
+			font-size: $font26;
+			color: $colorYellow;
+			// border-bottom: 2px solid $colorBlack;
+			display: block;
+
+			&:before {
+				
+			}
+		}
+	}
+}
+
+.ht-content-padding {
+	padding: 30px 90px;
+}
+
+.ht-content-nopadding {
+	padding-top: $contentPaddingT;
+
+	& > h3, & > img, & > p {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	& > h3 {
+		margin: $contentPaddingT $contentPaddingL;
+	}
+
+	& > p {
+		margin: $contentPaddingT $contentPaddingL 0;
+		text-indent: 2em;
+		line-height: 2;
+		font-size: $font14;
+	}
+
+	& > img {
+		margin-top: $contentPaddingT;
+	}
+
+	& > div {
+		margin: $contentPaddingT $contentPaddingL 0;
+	}
+}

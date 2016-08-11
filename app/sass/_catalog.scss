@@ -36,9 +36,10 @@
 
 .ht-catalog-others {
 	padding-bottom: 40px;
-	display: flex;
+	@extend %clearfix;
 
 	& > li {
+		float: left;
 		width: 140px;
 		height: 140px;
 		margin-left: 32px;

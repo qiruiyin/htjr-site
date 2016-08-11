@@ -1,0 +1,48 @@
+.ht-linkus-info::before, .ht-linkus-info::after {
+  content: "";
+  display: table;
+}
+
+.ht-linkus-info::after {
+  clear: both;
+}
+
+.ht-linkus-info {
+  background-color: #ae936c;
+  color: #fff;
+}
+
+.ht-linkus-info-left {
+  float: left;
+  width: 660px;
+  height: 400px;
+  padding: 0 50px;
+  background-color: #273443;
+  font-size: 24px;
+}
+
+.ht-linkus-info-left h5 {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.ht-linkus-info-left address {
+  margin-bottom: 40px;
+}
+
+.ht-linkus-info-left p {
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+.ht-linkus-info-right {
+  padding-top: 140px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ht-linkus-info-right p {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=linkus.css.map */

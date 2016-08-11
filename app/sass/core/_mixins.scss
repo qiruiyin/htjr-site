@@ -45,24 +45,24 @@
 }
 // inline-block end
 
-@mixin title-h3() {
-  position: relative;
-  width: $w;
-  background: #fff;
-  margin: 0 auto;
-  margin-top: -160px;
-  min-height: 500px;
+// @mixin title-h3() {
+//   position: relative;
+//   width: $w;
+//   background: #fff;
+//   margin: 0 auto;
+//   margin-top: -160px;
+//   min-height: 500px;
 
-  & > h3 {
-    border-bottom: 1px solid $colorGray;
-    text-align: center;
+//   & > h3 {
+//     border-bottom: 1px solid $colorGray;
+//     text-align: center;
 
-    span {
-      line-height: 60px;
-      padding: 0 20px 14px;
-      font-size: $font26;
-      color: $colorYellow;
-      border-bottom: 2px solid $colorBlack;
-    }
-  }
-}
+//     span {
+//       line-height: 60px;
+//       padding: 0 20px 14px;
+//       font-size: $font26;
+//       color: $colorYellow;
+//       border-bottom: 2px solid $colorBlack;
+//     }
+//   }
+// }

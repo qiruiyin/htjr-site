@@ -97,7 +97,7 @@ h1 {
 		padding: 0;
 		margin-left: -5px;
 		background: url("../img/circle.png");
-		transition: 1s;
+		transition: .5s;
 	    z-index: -1;
 	}
 }
@@ -126,6 +126,6 @@ h1 {
 		height: $menuH - $headerBorder;
 		background-color: $colorYellowHeader;
 		z-index: -1;
-		transition: 1s;
+		transition: .5s;
 	}
 }

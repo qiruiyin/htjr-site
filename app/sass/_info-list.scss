@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+
+.ht-info-list {
+	border-bottom: 1px solid $colorGray4;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+	& > h5 {
+		font-size: $font26;
+		color: $colorYellow2;
+		margin-bottom: 15px;
+	}
+
+	& > label {
+		font-size: $font18;
+		color: $colorYellow2;
+		margin-bottom: 20px;
+
+		address {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.ht-info-list-request {
+	font-size: $font14;
+	padding-left: 25px;
+	line-height: 2.5;
+}
