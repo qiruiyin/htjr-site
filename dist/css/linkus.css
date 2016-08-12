@@ -7,6 +7,10 @@
   clear: both;
 }
 
+.ht-content > .ht-linkus-info {
+  margin: 0 auto;
+}
+
 .ht-linkus-info {
   background-color: #ae936c;
   color: #fff;

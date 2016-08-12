@@ -39,8 +39,13 @@
   		$(this).siblings(".ht-nav-dropdown-menu-bg").css('transform', 'translateX('+  translateX +'px)');
 	});
 	$htMenu.on('mouseleave', function(){
-		var translateX = 100 * ind_menu;
-  		$(this).find(".ht-nav-dropdown-menu-bg").css('transform', 'translateX('+  translateX +'px)');
+		if ($(this).hasClass("active")) {
+			var translateX = 100 * ind_menu;
+  			$(this).find(".ht-nav-dropdown-menu-bg").css('transform', 'translateX('+  translateX +'px)');
+		} else {
+  			$(this).find(".ht-nav-dropdown-menu-bg").css('transform', 'translateX(0)');
+		}
+		
 	});
 
 	// index 处理

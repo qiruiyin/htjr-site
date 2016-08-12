@@ -26,12 +26,18 @@ $contentPaddingL: 50px;
 			line-height: 60px;
 			padding: 0 20px 14px;
 			font-size: $font26;
+			text-align: center; 
 			color: $colorYellow;
-			// border-bottom: 2px solid $colorBlack;
 			display: block;
 
 			&:before {
-				
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 100%;
+				width: 170px;
+				margin-left: -85px;
+				border-bottom: 2px solid $colorBlack;
 			}
 		}
 	}
