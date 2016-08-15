@@ -48,6 +48,18 @@
 	&.ht-banner-media {
 		background-image: url("../img/top-banner/media.jpg");
 	}
+	// 热点头条
+	&.ht-banner-headline {
+		background-image: url("../img/top-banner/headline.jpg");
+	}
+	// 投资者教育
+	&.ht-banner-edu {
+		background-image: url("../img/top-banner/edu.jpg");
+	}
+	// 研究报告
+	&.ht-banner-research {
+		background-image: url("../img/top-banner/research.jpg");
+	}
 }
 
 // 回到顶部
