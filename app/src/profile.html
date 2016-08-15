@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 @@include('./part/head.html')
-<title>首页</title>
-
-<!-- build:css css/linkus.css -->
-<link rel="stylesheet" type="text/css" href="./css/linkus.css">
-<!-- endbuild -->
+<title>集团简介</title>
 <body>
+<!-- 头部 -->
 <header class="ht-header">
 	<nav>
 		<h1>
@@ -59,60 +56,22 @@
 		</ul>
 	</nav>
 </header>
-
-<div class="ht-top-banner ht-banner-linkus"></div>
-
+<!-- banner -->
+<div class="ht-top-banner ht-banner-profile"></div>
+<!-- 内容区 -->
 <div class="ht-content ht-content-nopadding">
-	<h3><span>联系我们</span></h3>
-	<p class="ht-center">我们在上海设有办公室，欢迎来访。商务合作请联系下方对应联系方式</p>
-	<img src="./img/job/img1.jpg">
-	
-	<div id="allmap" style="width:1000px;height:320px; margin-left: 0;margin-right: 0; "></div>  
-
-	<div class="ht-linkus-info">
-		<div class="ht-linkus-info-left">
-			<h5>金海棠资产管理有限公司</h5>
-			<address>地址：中国上海虹口区武进路190号虹口SOHO20层</address>
-			<p>网址：<a>www.ch-jht.com</a></p>
-			<p>电话：<span>021-23561018</span></p>
-			<p>传真：<span>021-23561040</span></p>
-		</div>
-		<div class="ht-linkus-info-right">
-			<p>服务热线</p>
-			<p>400-991-8822</p>
-		</div>
-	</div>
+	<h3><span>集团简介</span></h3>
+	<p>海棠金融母公司为上海通江投资集团有限公司（以下简称“通江投资集团”）。</p>
+	<p>通江投资集团，自2009年于上海成立伊始，即秉持“侧身践行、恭勤不倦”与“同分享、同见证”的集团经营理念，紧扣中国经济的兴盛脉搏与发展机遇，经过近七年的躬耕不止，通江投资集团现已领先的成为一家专注于金融创新与实业投资的大型产业链综合集团。</p>
+	<p>作为一家有民族责任心的企业，通江投资集团全员积极响应国家倡导、以助力强国之梦的觉悟提出“聚享金融创新、践行实业强国”的伟大发展目标，构建“金融创新+实业投资”的双引擎发展战略，恪守金融必须反哺实业的经济原理，坚持价值投资理念，并结合产品多元化、服务多样化的运营手法，持续增加产业深度，贯通产业链上下游。</p>
+	<p>目前，通江投资集团的产融结合之路正呈现出蓬勃发展的良好态势。在实业投资端，集团布局已覆盖纺织化工、生物科技、文化影视、旅游酒店、汽车贸易、医疗服务、智能家居、TMT、新农业等众多领域，初步完成实业投资运营的战略布局。在金融创新端，集团业务线囊括了基金管理、资产管理、产业投资、融资租赁等综合金融服务领域。</p>
+	<p>今天的通江投资集团，聚集了来自地产、银行、信托、融资租赁、法律、财务等领域的专业人士，组建成高度专业化、市场化的管理团队与极其完善的运营架构。秉承“合心、合力、合作”的发展理念，通江投资集团将携手社会各界同仁，“合赢”璀璨明天。</p>
+	<img src="./img/profile/profile.png">
 </div>
-
+<!-- 底部 -->
 @@include('./part/footer.html')
+<!-- 共用依赖库和公用js -->
 @@include('./part/js.html')
-
-<!--引用百度地图API-->
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script type="text/javascript">
-    // 百度地图API功能
-	var map = new BMap.Map("allmap");
-	var point = new BMap.Point(121.493569,31.258705);
-	var marker = new BMap.Marker(point);  // 创建标注
-	map.addOverlay(marker);              // 将标注添加到地图中
-	map.centerAndZoom(point, 15);
-	var opts = {
-	  width : 200,     // 信息窗口宽度
-	  height: 100,     // 信息窗口高度
-	  title : "海棠金融" , // 信息窗口标题
-	  enableMessage:true,//设置允许信息窗发送短息
-	  message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
-	}
-	var infoWindow = new BMap.InfoWindow("地址：中国上海虹口区武进路190号虹口SOHO20层", opts);  // 创建信息窗口对象 
-	marker.addEventListener("click", function(){          
-		map.openInfoWindow(infoWindow,point); //开启信息窗口
-	});
-</script>
-
-
-<!-- build:js js/common.js -->
-<script src="./js/common.js"></script>
-<!-- endbuild -->
 <!-- build:js js/index.js -->
 <script src="./js/index.js"></script>
 <!-- endbuild -->

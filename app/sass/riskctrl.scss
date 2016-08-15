@@ -1,0 +1,31 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.ht-risk-info {
+	@extend %clearfix;
+
+	li {
+		float: left;
+		width: 250px;
+		height: 260px;
+		margin-left: 21px; 
+		padding: 30px;
+		background-color: #ececec;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	h5 {
+		margin: 0 0 20px;
+		font-size: $font26;
+		color: #ae936c;
+		text-align: center;
+	}
+
+	p {
+		line-height: 2.25;
+	}
+}

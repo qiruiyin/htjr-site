@@ -4,10 +4,6 @@
 
 // 详情页css
 
-// 内容区
-$contentPaddingT: 30px;
-$contentPaddingL: 50px;
-
 // 内容容器
 .ht-content {
 	position: relative;
@@ -44,7 +40,7 @@ $contentPaddingL: 50px;
 }
 
 .ht-content-padding {
-	padding: 30px 90px;
+	padding: $contentPaddingT $contentPaddingL;
 }
 
 .ht-content-nopadding {
@@ -71,7 +67,11 @@ $contentPaddingL: 50px;
 		margin-top: $contentPaddingT;
 	}
 
-	& > div {
+	& > div, & > ul {
 		margin: $contentPaddingT $contentPaddingL 0;
+	}
+
+	&.ht-content-nopadding-bottom {
+		padding-bottom: $contentPaddingT;
 	}
 }

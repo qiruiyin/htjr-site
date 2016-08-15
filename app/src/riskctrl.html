@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 @@include('./part/head.html')
-<title>首页</title>
+<title>海棠风控</title>
+<link rel="stylesheet" type="text/css" href="./css/riskctrl.css">
 <body>
+<!-- 头部 -->
 <header class="ht-header">
 	<nav>
 		<h1>
@@ -16,7 +18,7 @@
 					<li><a href="####">组织结构</a></li>
 					<li><a href="####">董事长致辞</a></li>
 					<li><a href="####">品牌诠释</a></li>
-					<li class="active"><a href="about.html">关于我们</a></li>
+					<li><a href="about.html">关于我们</a></li>
 					<li class="ht-nav-dropdown-menu-bg"></li>
 				</ul>
 			</li>
@@ -55,23 +57,36 @@
 		</ul>
 	</nav>
 </header>
+<!-- banner -->
+<div class="ht-top-banner ht-banner-riskctrl"></div>
+<!-- 内容区 -->
+<div class="ht-content ht-content-nopadding ht-content-nopadding-bottom">
+	<h3><span>海棠风控</span></h3>
+	<p>海棠金融在成立仅一年的时间内就能取得如此成绩，是因为公司严格把控项目的风险。公司通过多年的经验，形成一套完善的“4+2+2”的风控体系。</p>
+	
+	<ul class="ht-risk-info">
+		<li>
+			<h5>4大层次</h5>
+			<p>从项目进来开始，先是项目尽调，然后对项目做可行性分析，再由风控委员会对项目进行风控审核，最后对由投决委员会对项目进行投决。</p>
+		</li>
 
-<div class="ht-top-banner ht-banner-about"></div>
+		<li>
+			<h5>2大结构</h5>
+			<p>业务部门完成所有项目相关材料整理的内控工作，公司做总体的内控。</p>
+		</li>
 
-<div class="ht-content ht-content-nopadding">
-	<h3><span>海棠金融</span></h3>
-	<p>是一家依托专业投行的综合金融服务平台。海棠金融由通江投资集团控股，总部位于上海。</p>
-	<p>海棠金融专注于为高净值投资者、小白客群、大型财团、金融机构等各种类型客户提供全方位、专业化、定制化的金融蟾皮的设计与服务。海棠金融拥有分析评级和金融大数据、第三方财富管理、家族财富办公室、定制化产品设计与服务、线上专业投资者教育等五条业务线。</p>
-	<img src="./img/about/img1.jpg">
-
-	<h3><span>专业服务</span></h3>
-	<p>海棠金融分析评级和金融大数据业务基于数据的评测、评级和分析，依靠私募行业的大数据支持，定期形成专业分析评级报告和数据，服务于定向金融机构。</p>
-	<p>海棠金融将极致的用户体验、线上专业投资则教育看作为公司的战略性支撑，公司将通过线上平台为投资者提供全方位、专业化、零距离的金融投资教育。</p>
-	<p>海棠金融结合多年的资产管理用户体验，倡导具备风险意意识的理财投资习惯，并通过严谨的金融资产渠道的开拓和信息处理技术，为用户提供丰富、稀缺、安心、专属、私密的金融理财产品。</p>
-	<img src="./img/about/img2.jpg">
+		<li>
+			<h5>2大委员会</h5>
+			<p>即风控委员会和投决委员会。海棠金融深知只有做好风控，才能做好金融。</p>
+		</li>
+	</ul>
+	
+	<h3><span>风控团队</span></h3>
+	<p>海棠金融拥有一支金融专业背景极强的风控团队，团队成员由资深金融从业人士和法律从业人士组成，团队从业经验丰富，其中多数工作人员有过银行、信托等金融机构相关工作经历，部分工作人员有知名法律机构工作经验。海棠金融风控体系建设参照国内外知名投行机构管理，同时在具体执行细节上进行了创新与优化。</p>
 </div>
+<!-- 底部 -->
 @@include('./part/footer.html')
-
+<!-- 共用依赖库和公用js -->
 @@include('./part/js.html')
 <!-- build:js js/index.js -->
 <script src="./js/index.js"></script>

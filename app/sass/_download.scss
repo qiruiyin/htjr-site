@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.ht-download {
+	margin-top: 0;
+	padding-top: 60 - $contentPaddingT; // 
+	font-size: 0;
+
+	& > li {
+		width: 235px;
+		margin-right: 47px;
+		margin-bottom: 60px;
+		font-size: $font14;
+		display: inline-block;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+
+	h5 {
+		color: $colorBlackFont;
+		font-size: $font18;
+	}
+
+	.ht-download-info {
+		color: $colorGray3;
+		font-size: $font12;
+		margin-bottom: 10px;
+
+		& > span {
+			padding: 0 10px;
+			border-left: 1px solid #000;
+
+			&:first-child {
+				padding-left: 0;
+				border-left: 0;
+			}
+		}
+	}
+
+	.ht-download-btn {
+		width: 100%;
+		line-height: 44px;
+		text-align: center;
+		color: #fff;
+		font-size: $font20;
+		background-color: #ae936c;
+	}
+}

@@ -1,0 +1,30 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.ht-duker-rights {
+	@extend %clearfix;
+
+	& > li {
+		float: left;
+		width: 230px;
+		height: 430px;
+		margin-left: 55px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	h5 {
+		margin: 30px 0 20px;
+		color: $colorBlack;
+		font-size: $font18;
+	}
+
+	ul {
+		list-style: initial;
+  		padding-left: 20px;
+  		line-height: 1.75;
+	}
+}
