@@ -13,6 +13,16 @@
 	margin-top: -182px;
 	min-height: 500px;
 
+	& > h3, & > h5, & > img, & > p {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&> h3, &> h5, & > p, & > img, & > div, & > ul {
+		margin-top: $contentPaddingT;
+	}
+
 	& > h3 {
 		border-bottom: 1px solid $colorGray;
 		text-align: center;
@@ -37,38 +47,41 @@
 			}
 		}
 	}
-}
-
-.ht-content-padding {
-	padding: $contentPaddingT $contentPaddingL;
-}
-
-.ht-content-nopadding {
-	padding-top: $contentPaddingT;
-
-	& > h3, & > img, & > p {
-		&:first-child {
-			margin-top: 0;
-		}
-	}
-
-	& > h3 {
-		margin: $contentPaddingT $contentPaddingL;
-	}
 
 	& > p {
-		margin: $contentPaddingT $contentPaddingL 0;
 		text-indent: 2em;
 		line-height: 2;
 		font-size: $font14;
 	}
 
-	& > img {
-		margin-top: $contentPaddingT;
+	& > h5 {
+		text-indent: 2 * $font14;
+		font-size: $font18;
+
+		& + p {
+			margin-top: 10px;
+		}
 	}
 
-	& > div, & > ul {
-		margin: $contentPaddingT $contentPaddingL 0;
+	
+
+	
+}
+
+.ht-content-padding {
+	padding: $contentPaddingT $contentPaddingL;
+
+	&.ht-content-padding-nobottom {
+		padding-bottom: 0;
+	}
+}
+
+.ht-content-nopadding {
+	padding-top: $contentPaddingT;
+
+	& > h3, & > p, & > div, & > ul  {
+		margin-left: $contentPaddingL;
+		margin-right: $contentPaddingL;
 	}
 
 	&.ht-content-nopadding-bottom {

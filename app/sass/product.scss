@@ -1,0 +1,32 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.ht-product-info {
+	@extend %clearfix;
+
+	& > li {
+		float: left;
+		width: 180px;
+		height: 180px;
+		padding: 50px 20px;
+		margin-left: 26px;
+		background-color: #bba382;
+		color: #fff;
+		text-align: center;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	h5 {
+		padding: 0 10px 10px;
+		border-bottom: 1px solid #fff; 
+		font-size: $font26;
+	}
+
+	p {
+		font-size: $font18;
+	}
+}
