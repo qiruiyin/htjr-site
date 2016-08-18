@@ -52,7 +52,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="details.html">海棠公爵会</a>
+				<a href="duke.html">海棠公爵会</a>
 			</li>
 			<li class="ht-nav-icon"></li>
 		</ul>
@@ -151,7 +151,20 @@
 		<h2><p>合作伙伴<span>Cooperrative Partner</span></p></h2>		
 	</header>
 	<div class="section-content">
-		<div class="parter"></div>
+		<div class="parter">
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
+		</div>
 	</div>
 </section>
 
@@ -199,8 +212,10 @@
 </footer>
 
 @@include('./part/js.html')
-<!-- build:js js/index.js -->
-<script src="./js/index.js"></script>
-<!-- endbuild -->
+<script>
+$(".parter a").each(function(index) {
+	$(this).css({"background-position" : - index % 4 * 250 + "px " +  - parseInt(index / 4) * 110 + "px"});
+});
+</script>
 </body>
 </html>

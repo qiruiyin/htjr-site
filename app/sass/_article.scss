@@ -80,6 +80,13 @@ $marginTop: 30px;
 	left: -182px;
 	top: 220px;
 
+	&.active {
+		position: fixed;
+		top: 220px;
+		left: 50%;
+		margin-left: - ($w/2 + 182);
+	}
+
 	& > div {
 		width: 182px;
 		height: 200px;
@@ -120,6 +127,13 @@ $marginTop: 30px;
 	position: absolute;
 	top: 220px;
 	right: -80px;
+
+	&.active {
+		position: fixed;
+		top: 220px;
+		right: 50%;
+		margin-right: - ($w/2 + 80);
+	}
 
 	a {
 		margin-top: 20px;

@@ -67,7 +67,7 @@
 	<p class="ht-center">我们在上海设有办公室，欢迎来访。商务合作请联系下方对应联系方式</p>
 	<img src="./img/job/img1.jpg">
 	
-	<div id="allmap" style="width:1000px;height:320px; margin-left: 0;margin-right: 0; "></div>  
+	<div id="allmap" style="width:1000px;height:500px; margin-left: 0;margin-right: 0;"></div>
 
 	<div class="ht-linkus-info">
 		<div class="ht-linkus-info-left">
@@ -88,27 +88,20 @@
 @@include('./part/js.html')
 
 <!--引用百度地图API-->
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script type="text/javascript">
-    // 百度地图API功能
-	var map = new BMap.Map("allmap");
-	var point = new BMap.Point(121.493569,31.258705);
-	var marker = new BMap.Marker(point);  // 创建标注
-	map.addOverlay(marker);              // 将标注添加到地图中
-	map.centerAndZoom(point, 15);
-	var opts = {
-	  width : 200,     // 信息窗口宽度
-	  height: 100,     // 信息窗口高度
-	  title : "海棠金融" , // 信息窗口标题
-	  enableMessage:true,//设置允许信息窗发送短息
-	  message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
-	}
-	var infoWindow = new BMap.InfoWindow("地址：中国上海虹口区武进路190号虹口SOHO20层", opts);  // 创建信息窗口对象 
-	marker.addEventListener("click", function(){          
-		map.openInfoWindow(infoWindow,point); //开启信息窗口
-	});
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=RYsoWGWGpcOzCOHDWdSzUPLLAEpzbYa3">
 </script>
-
+<script type="text/javascript">
+(function(){
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(121.493583,31.258710);
+	map.centerAndZoom(point, 20);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);               // 将标注添加到地图中
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+})();
+</script>
 
 <!-- build:js js/common.js -->
 <script src="./js/common.js"></script>

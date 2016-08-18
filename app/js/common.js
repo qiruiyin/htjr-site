@@ -85,4 +85,16 @@
 		$tabBody.children('section').eq(ind).addClass('active');
 	});
 	// tab 切换 end
+
+	// 上一篇，下一篇和分享 start
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 470) {
+			$(".ht-article-link").addClass("active");
+			$(".ht-article-share").addClass("active");
+		} else {
+			$(".ht-article-link").removeClass("active");
+			$(".ht-article-share").removeClass("active");
+		}
+	});
+	// 上一篇，下一篇和分享 end
 })();

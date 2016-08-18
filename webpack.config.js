@@ -1,9 +1,9 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: "./app/js/common.ts",
+    entry: "./app/js/app.ts",
     output: {
-        filename: "./app/js/common.js",
+        filename: "./app/js/app.js",
     },
 
     // Enable sourcemaps for debugging webpack's output.
@@ -35,7 +35,7 @@ module.exports = {
     //     "react-dom": "ReactDOM"
     // },
     plugins: [
-        // // 压缩混淆
+        // 压缩混淆
         // new webpack.optimize.UglifyJsPlugin({
         //  compress: {
         //      warnings:false
