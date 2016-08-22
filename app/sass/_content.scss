@@ -62,10 +62,6 @@
 			margin-top: 10px;
 		}
 	}
-
-	
-
-	
 }
 
 .ht-content-padding {
@@ -79,7 +75,7 @@
 .ht-content-nopadding {
 	padding-top: $contentPaddingT;
 
-	& > h3, & > p, & > div, & > ul  {
+	& > h3, & > h5, & > p, & > div, & > ul  {
 		margin-left: $contentPaddingL;
 		margin-right: $contentPaddingL;
 	}

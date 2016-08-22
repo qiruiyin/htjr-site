@@ -1,0 +1,75 @@
+@charset 'utf-8';
+@import  'sandal/core';
+@import  'core/mixins', 'core/functions', 'core/vars';
+
+.organization-boss {
+    width: 880px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    ul {
+        width: 880px;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        width: 180px;
+        margin-right: 53px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    label {
+        height: 100px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        display: block;
+
+        span {
+            height: 40px;
+            margin-bottom: 10px;
+            line-height: 60px;
+            font-size: 24px;
+            display: block;
+        }
+    }
+}
+
+.organization-boss-header {
+    position: relative;
+    width: 100%;
+    height: 230px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background-color: #ae936c;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("../img/organization/ceo.png") no-repeat;
+    }
+
+    &.organization-boss-header-coo:after {
+        background-image: url("../img/organization/coo.png");
+    }
+    &.organization-boss-header-cmo:after {
+        background-image: url("../img/organization/cmo.png");
+    }
+    &.organization-boss-header-gm:after {
+        background-image: url("../img/organization/gm.png");
+    }
+}
