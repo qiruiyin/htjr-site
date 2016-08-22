@@ -55,20 +55,31 @@
 }
 
 .ht-catalog-top {
-	background: url("../img/catalog/top.jpg?__spriter") no-repeat;
+	background: url("../img/catalog/catalog.png") no-repeat;
+	background-position: -0px -0px;
 }
+
 .ht-catalog-stock {
-	background: url("../img/catalog/stock.jpg?__spriter") no-repeat;
+	background-image: url("../img/catalog/catalog.png");
+	background-position: -140px -0px;
 }
+
 .ht-catalog-media {
-	background: url("../img/catalog/media.jpg?__spriter") no-repeat;
+	background-image: url("../img/catalog/catalog.png");
+	background-position: -0px -140px;
 }
+
 .ht-catalog-edu {
-	background: url("../img/catalog/edu.jpg?__spriter") no-repeat;
+	background-image: url("../img/catalog/catalog.png");
+	background-position: -140px -140px;
 }
+
 .ht-catalog-report {
-	background: url("../img/catalog/report.jpg?__spriter") no-repeat;
+	background-image: url("../img/catalog/catalog.png");
+	background-position: -280px -0px;
 }
+
 .ht-catalog-rating {
-	background: url("../img/catalog/rating.jpg?__spriter") no-repeat;
+	background-image: url("../img/catalog/catalog.png");
+	background-position: -280px -140px;
 }

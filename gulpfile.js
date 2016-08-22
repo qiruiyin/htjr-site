@@ -53,9 +53,9 @@
 		return gulp.src(_.css + '/*.css')
 	      	.pipe($.cssSpriter({
 				// 生成的spriter的位置
-	        	'spriteSheet': _.img + '/catalog.jpg',
+	        	'spriteSheet': _.img + '/catalog/catalog.png',
 	        	// 生成样式文件图片引用地址的路径
-	        	'pathToSpriteSheetFromCSS': '../img/catalog.jpg'
+	        	'pathToSpriteSheetFromCSS': '../img/catalog/catalog.png'
 			}))
 			.pipe(gulp.dest(_.css));
 	});

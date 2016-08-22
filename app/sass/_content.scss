@@ -12,6 +12,10 @@
 	margin: 0 auto;
 	margin-top: -182px;
 	min-height: 500px;
+	
+	& > img {
+		margin: 0 auto;
+	}
 
 	& > h3, & > h5, & > img, & > p {
 		&:first-child {
