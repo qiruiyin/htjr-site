@@ -24,34 +24,56 @@ footer {
 	padding: 20px 0;
 	display: flex;
 	line-height: 1.75;
-	font-size: $font16;
 	line-height: 2;
+	text-align: center;
 
 	ul, a {
 		flex: 1;
 	}
 
 	& > a {
-		height: 30px;
+		color: $fontColorBlack;
+	}
+
+	li{
+		font-size: $fontSmall;
+		
+		&:first-child {
+			font-size: $fontBase;
+			color: $fontColorBlack;
+			margin-bottom: 10px;
+		}
+
+		a {
+			&:hover {
+				color: $fontColorBlack; 
+			}
+		}
 	}
 
 	.qrcode {
 		flex: initial;
-		width: 270px;
+		width: 250px;
 		padding: 0;
 		text-align: center;
 		li {
-			display: inline-block;
+			float: left;
+			font-size: $fontBase;
 
 			&:first-child {
-				margin-right: 30px;
+				margin-bottom: 0;
+				margin-right: 20px;
 			}
 
-			img, span {
+			img {
+				width: 106px;
+				height: 106px;
 				display: block;
 			}
 			span {
 				margin-top: 10px;
+				color: $fontColorBlack;
+				display: block;
 			}
 		}
 	}
@@ -61,6 +83,7 @@ footer {
 	padding-bottom: 10px;
 	border-top: 1px solid $footerBorderColor;
 	line-height: 4;
-	font-size: $font14;
+	font-size: $fontSmall;
+	color: $fontColorGray;
 	text-align: center;
 }

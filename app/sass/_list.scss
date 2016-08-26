@@ -27,32 +27,32 @@
 	}
 
 	h5 {
-		font-size: $font18;
+		font-size: $fontH5;
 		line-height: 1.5;
+		color: $fontColorBlack;
 	}
 
 	.article-link-info {
-		font-size: $font12;
+		font-size: $fontSmall;
 		margin-top: 10px;
+		color: $fontColorGray;
 
 		span {
 			line-height: 1;
 			padding-right: 10px;
 			margin-right: 10px;
-			border-right: 1px solid $colorBlack;
-			color: $colorGray3;
+			border-right: 1px solid $fontColorGray;
 			display: inline-block;
 		}
 
 		label {
-			width: 3em;
+			margin-right: 1em;
 			color: $colorBlue;
 			display: inline-block;
 		}
 	}
 
 	p {
-		font-size: $font14;
 		line-height: 2;
 	}
 }

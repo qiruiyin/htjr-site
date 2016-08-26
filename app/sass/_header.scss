@@ -10,9 +10,9 @@ header.ht-header {
 	position: relative;
 	width: 100%;
 	min-width: $w + 40;
-	border-bottom: $headerBorder solid $colorBlack;
-	color: $colorBlackFont;
+	border-bottom: $headerBorder solid $fontColorBlack;
 	background-color: #fff;
+	color: $fontColorBlack;
 	
 	nav {
 		width: $w;
@@ -57,7 +57,7 @@ h1 {
 		float: left;
 		width: 130px;
 		padding: 0;
-		font-size: $font22;
+		font-size: $fontNav;
 		text-align: center;
 		
 		&.ht-nav-dropdown {
@@ -94,7 +94,7 @@ h1 {
 	}
 	.ht-nav-icon {
 		position: absolute;
-		top: 70px;
+		top: 67px;
 		left: 65px;
 		width: 10px;
 		height: 10px;
@@ -112,7 +112,7 @@ h1 {
 	width: 1000px;
 	padding-left: 0;
 	text-align: left;
-	font-size: 16px;
+	font-size: $fontNavSub;
 	color: #fff;
 	line-height: $menuH;
 	z-index: 2;
@@ -122,6 +122,7 @@ h1 {
 		float: left;
 		width: 100px;
 		text-align: center;
+		line-height: $menuH - $headerBorder;
 	}
 	
 	.ht-nav-dropdown-menu-bg {

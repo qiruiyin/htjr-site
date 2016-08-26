@@ -14,8 +14,24 @@ $font14: 14px;
 $font13: 13px;
 $font12: 12px;
 
+// end上面的部分用到
+$fontBase: 14px;
+$fontNav: 20px;
+$fontNavSub: 16px;
+$fontLink: 12px;
+$fontH3: 26px;
+$fontH5: 20px;
+$fontSmall: 12px;
+
+
+
 // color
 $colorBg: #ececec; //除首页外背景色
+$fontColor: #666; //默认字体颜色
+$fontColorBlack: #333; //加深颜色、高亮
+$fontColorGray: #999; //灰色
+$fontColorWhite: #fff; //白色，可以不定义
+
 
 $colorBlack: #000; // 黑色
 $colorBlackFont: #020202; // 字体颜色黑色
@@ -23,7 +39,6 @@ $colorBlack2: #4b4946; // 海棠服务背景黑色
 $colorYellowHeader: #bba382; //头部hover的背景黄色
 $colorYellow: #e9d482; //黄色
 $colorYellow2: #af936c; //公爵会背景黄色
-
 $colorGray: #acacac;  //灰色
 $colorGrayBg: #ececec; //body背景色
 $colorGray2: #d9d9d9; // 底部灰色
@@ -31,7 +46,6 @@ $colorGray3: #777; // 文章信息颜色
 $colorGray4: #aaa; // 标题栏目颜色
 $colorGray5: #9a9a9a; // 动态：标题作者信息颜色（和3一样）
 $colorGray6: #a2a2a2; // 动态：特殊展现颜色
-
 $colorBrown: #947d5d; //棕色
 $colorBlue: #2079c4; // 蓝色
 

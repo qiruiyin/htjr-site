@@ -91,6 +91,14 @@
 		if($(this).scrollTop() > 470) {
 			$(".ht-article-link").addClass("active");
 			$(".ht-article-share").addClass("active");
+			
+			if ($(this).scrollTop() + $(".ht-footer").height() + 220 + $(".ht-article-link").height() >= $(document).height()) {
+				$(".ht-article-link").addClass("active-bottom");
+				$(".ht-article-link").css("bottom", - $(".ht-catalog").height());
+			} else {
+				$(".ht-article-link").removeClass("active-bottom");
+				$(".ht-article-link").css("bottom", "");
+			}
 		} else {
 			$(".ht-article-link").removeClass("active");
 			$(".ht-article-share").removeClass("active");

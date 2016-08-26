@@ -3,6 +3,7 @@
 @import  'core/mixins', 'core/functions', 'core/vars';
 
 .ht-brand-credentials {
+	margin-top: $contentPaddingT;
 	@extend %clearfix;
 
 	li {
@@ -54,6 +55,7 @@
 	}
 	img {
 		float: right;
+		width: 258px;
 		display: block;
 	}
 }
